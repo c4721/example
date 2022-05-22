@@ -18,6 +18,8 @@ class DL_Model(torch.nn.Model):
 class Text2Image():
     def __init__():
         self.model = DL_Model()
+        self.model.load_state_dict(torch.load(PATH))
+
 
     def process(self, data):
         '''
